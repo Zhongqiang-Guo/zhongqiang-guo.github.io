@@ -1,0 +1,43 @@
+---
+layout: default
+title: Categories - Blog
+category: categories
+---
+
+<link rel="stylesheet" href="css/style.css">
+<div class="subheader-container">
+<div class = "inner">
+<nav class = "sub-nav">
+    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">时间线</a>
+    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">归档</a>
+    <a class="{% if page.category == 'project' %} selected {% endif %}" href="/cn/project">维基</a>
+</nav>
+</div>
+</div>
+<section class="inner">
+<div id='tag_cloud'>
+{% for cat in site.categories %}
+<a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }}</a>
+{% endfor %}
+</div>
+
+<section class="inner">
+{% for cat in site.categories %}
+  <li class="category-listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}（共{{ cat[1].size }}篇）</li>
+{% for post in cat[1] %}
+<li class="listing-item" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time></li>
+{% endfor %}
+{% endfor %}
+</section>
+
+<script src="../js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
+<script language="javascript">
+$.fn.tagcloud.defaults = {
+    size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#f8e0e6', end: '#ff3333'}
+};
+
+$(function () {
+    $('#tag_cloud a').tagcloud();
+});
+</script>

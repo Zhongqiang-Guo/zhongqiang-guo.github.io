@@ -1,0 +1,29 @@
+---
+layout: default
+title: Yong Yuan - Blog
+category: blog
+---
+
+<link rel="stylesheet" href="css/style.css">
+<div class="subheader-container">
+<div class = "inner">
+<nav class = "sub-nav">
+    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">时间线</a>
+    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">归档</a>
+    <a class="{% if page.category == 'project' %} selected {% endif %}" href="/cn/project">维基</a>
+</nav>
+</div>
+</div>
+<section class="inner">
+  <ul class="posts">
+    {% for post in site.posts %}
+	  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+	  {% if year != y %}
+		{% assign year = y %}
+		<span class="listing-seperator">{{ y }}</span>
+	  {% endif %}
+    <!--<style>#uniqueid:hover{background-color: #D3D3D3; text-decoration: none;}</style>-->
+    <a  id = "uniqueid" class="listing-item" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time></a>
+    {% endfor %}
+  </ul>
+</section>

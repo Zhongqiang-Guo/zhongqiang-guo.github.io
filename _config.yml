@@ -1,0 +1,31 @@
+title: Yong Yuan
+
+# 自定义post url
+permalink: /blog/:title.html
+timezone: Asia/Chongqing
+
+# Overriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
+safe: true
+lsi: false
+#markdown: kramdown
+#kramdown:
+#  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+#    extensions:
+#    - autolink
+#    - footnotes
+#    - smart
+#  use_coderay: true
+#  syntax_highlighter: rouge
+#  coderay:
+#    coderay_line_numbers:  nil
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "underline"]
+
+# Keybase
+include:
+  - .well-known
+
+# White-listed plugins
+gems:
+  - jekyll-sitemap
