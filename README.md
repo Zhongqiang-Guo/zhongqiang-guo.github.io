@@ -1,4 +1,8 @@
-这是我的个人主页，该主题是[Sébastien Saunier](https://raw.github.com/ssaunier/ssaunier.github.io/)在[marcgg](http://marcgg.com/)的基础上改写的。我fork过来后，也稍微做了些修改，如果你觉得不错，可以直接从我这里fork过去，fork过去后还请你把涉及到我的一些信息、文章、图片删掉。[主题预览](http://yongyuan.name/)。
+###Welcome to my [homepage](http://zhongqiang-guo.github.io)!
+This GitHub blog is forked from [Yong Yuan](http://willard-yuan.github.io/).
+
+
+<!--这是我的个人主页，该主题是[Sébastien Saunier](https://raw.github.com/ssaunier/ssaunier.github.io/)在[marcgg](http://marcgg.com/)的基础上改写的。我fork过来后，也稍微做了些修改，如果你觉得不错，可以直接从我这里fork过去，fork过去后还请你把涉及到我的一些信息、文章、图片删掉。[主题预览](http://yongyuan.name)。
 
 ### 已完成功能
 
@@ -28,3 +32,4 @@
 
 ## Todo
 - 添加时间线，参考[fexo](https://github.com/forsigner/fexo)
+-->
