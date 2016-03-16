@@ -9,9 +9,13 @@ categories: [Hadoop]
 
 ###简要说明
 这里放了两个Hadoop MapReduce 程序的模板框架，主要包括内容：
+
 * 一些基本的包import语句
+
 * 继承Mapper基类
+
 * map()方法头
+
 * 继承Reducer基类
 * reduce()方法头
 * 作业job的配置项
