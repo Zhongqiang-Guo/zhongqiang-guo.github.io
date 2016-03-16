@@ -20,7 +20,7 @@ categories: [Hadoop]
 ###TODO
 写MR程序时，程序员需要实现的有：
 * 相应的map()函数
-* reduce()函数
+* 相应的reduce()函数
 
 ###MapReduce程序模板1：
 
