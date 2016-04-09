@@ -11,25 +11,25 @@ categories: [Hadoop]
 这里放了两个Hadoop MapReduce 程序的模板框架，主要包括内容：
 
 * 一些基本的包import语句
-* 继承Mapper基类
-* map()方法头
-* 继承Reducer基类
-* reduce()方法头
+* 继承`Mapper`基类
+* `map()`方法头
+* 继承`Reducer`基类
+* `reduce()`方法头
 * 作业job的配置项
 * 其他
 
 ###TODO
 写MR程序时，程序员需要实现的有：
 
-* 相应的map()函数
-* 相应的reduce()函数
+* 相应的`map()`函数
+* 相应的`reduce()`函数
 
 ###MapReduce程序模板1：
 
 ```
 /*
  * MapReduce程序模板，一些必要的语句
- * 写MR程序时，复制该文件，修改类名，实现相应的map、reduce函数等 
+ * 写MR程序时，复制该文件，修改类名，实现相应的`map()`、`reduce()`函数等 
  */
 
 import java.io.IOException; 

@@ -1,7 +1,7 @@
 ---
-layout: 
-title: 
-categories: []
+layout: post
+title: 题目
+categories: [分类]
 ---
 
 
