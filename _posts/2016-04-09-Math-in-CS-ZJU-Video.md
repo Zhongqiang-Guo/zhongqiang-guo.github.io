@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 计算机中的数学-浙江大学视频（视频幽默风趣、短小精悍）
-categories: []
+categories: [Math]
 ---
 
 
